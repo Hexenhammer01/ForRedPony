@@ -14,6 +14,8 @@ dependencies {
     testImplementation("io.rest-assured:rest-assured:5.3.0")
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.0")
     testImplementation("org.jetbrains.kotlin:kotlin-test:1.9.10")
+    testImplementation("io.rest-assured:json-path:5.3.0")
+    testImplementation("io.rest-assured:kotlin-extensions:5.3.0")
 }
 
 tasks.test {

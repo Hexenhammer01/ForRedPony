@@ -1,5 +1,5 @@
 package api
 
-object env {
+object env1 {
     const val baseURI = "https://petstore.swagger.io"
 }

@@ -1,15 +1,16 @@
 package api
 import io.restassured.RestAssured
-import org.hamcrest.Matchers.*
 import org.junit.jupiter.api.Test
 
 
-class ApiTest {
+
+
+class ApiTests {
 
     @Test
     fun `GET findByAvailableStatus`() {
         RestAssured.given()
-            .baseUri(env.baseURI)
+            .baseUri(env1.baseURI)
             .log().all() // Логирование всех параметров запроса
             .`when`()
             .get("/v2/pet/findByStatus?status=available")
@@ -21,7 +22,7 @@ class ApiTest {
     @Test
     fun `GET findByPendingStatus`() {
         RestAssured.given()
-            .baseUri(env.baseURI)
+            .baseUri(env1.baseURI)
             .log().all() // Логирование всех параметров запроса
             .`when`()
             .get("/v2/pet/findByStatus?status=pending")
@@ -33,7 +34,7 @@ class ApiTest {
     @Test
     fun `GET findBySoldStatus`() {
         RestAssured.given()
-            .baseUri(env.baseURI)
+            .baseUri(env1.baseURI)
             .log().all() // Логирование всех параметров запроса
             .`when`()
             .get("/v2/pet/findByStatus?status=sold")
@@ -45,7 +46,7 @@ class ApiTest {
     @Test
     fun `GET findPet`() {
         RestAssured.given()
-            .baseUri(env.baseURI)
+            .baseUri(env1.baseURI)
             .log().all() // Логирование всех параметров запроса
             .`when`()
             .get("/v2/pet/9223372036854769000")
