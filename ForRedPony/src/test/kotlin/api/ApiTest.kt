@@ -9,7 +9,7 @@ class ApiTest {
     @Test
     fun `validate GET endpoint`() {
         RestAssured.given()
-            .baseUri("https://petstore.swagger.io")
+            .baseUri(env.baseURI)
             .log().all() // Логирование всех параметров запроса
             .`when`()
             .get("/v2/pet/findByStatus?status=available")
