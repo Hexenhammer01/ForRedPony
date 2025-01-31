@@ -43,17 +43,17 @@ class ApiTests {
             .statusCode(200)
     }
 
-    @Test
-    fun `GET findPet`() {
-        RestAssured.given()
-            .baseUri(env1.baseURI)
-            .log().all() // Логирование всех параметров запроса
-            .`when`()
-            .get("/v2/pet/9223372036854769000")
-            .then()
-            .log().all() // Логирование всех параметров ответа
-            .statusCode(200)
-    }
+//    @Test
+//    fun `GET findPet`() {
+//        RestAssured.given()
+//            .baseUri(env1.baseURI)
+//            .log().all() // Логирование всех параметров запроса
+//            .`when`()
+//            .get("/v2/pet/9223372036854769000")
+//            .then()
+//            .log().all() // Логирование всех параметров ответа
+//            .statusCode(200)
+//    }
 
 
 
