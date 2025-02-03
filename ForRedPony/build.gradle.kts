@@ -16,6 +16,10 @@ dependencies {
     testImplementation("org.jetbrains.kotlin:kotlin-test:1.9.10")
     testImplementation("io.rest-assured:json-path:5.3.0")
     testImplementation("io.rest-assured:kotlin-extensions:5.3.0")
+    implementation("com.google.code.gson:gson:2.10.1")
+
+
+
 }
 
 tasks.test {
